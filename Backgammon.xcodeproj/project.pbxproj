@@ -13,6 +13,7 @@
 		079CC9661DBF24F800E88217 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079CC9651DBF24F800E88217 /* MessagesViewController.swift */; };
 		079CC9691DBF24F900E88217 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 079CC9671DBF24F900E88217 /* MainInterface.storyboard */; };
 		079CC96B1DBF24F900E88217 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 079CC96A1DBF24F900E88217 /* Assets.xcassets */; };
+		079CC9771DBF266800E88217 /* BackgammonGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079CC9761DBF266800E88217 /* BackgammonGame.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,8 @@
 		079CC9681DBF24F900E88217 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		079CC96A1DBF24F900E88217 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		079CC96C1DBF24F900E88217 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		079CC9761DBF266800E88217 /* BackgammonGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgammonGame.swift; sourceTree = "<group>"; };
+		07A531731DBF2BD000766458 /* Backgammon-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Backgammon-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +90,8 @@
 			children = (
 				079CC9561DBF24F800E88217 /* Assets.xcassets */,
 				079CC9581DBF24F800E88217 /* Info.plist */,
+				079CC9761DBF266800E88217 /* BackgammonGame.swift */,
+				07A531731DBF2BD000766458 /* Backgammon-Bridging-Header.h */,
 			);
 			path = Backgammon;
 			sourceTree = "<group>";
@@ -160,6 +165,7 @@
 					079CC9521DBF24F800E88217 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 3J5W323SD5;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 					079CC95C1DBF24F800E88217 = {
@@ -214,6 +220,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				079CC9661DBF24F800E88217 /* MessagesViewController.swift in Sources */,
+				079CC9771DBF266800E88217 /* BackgammonGame.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,10 +370,14 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 3J5W323SD5;
 				INFOPLIST_FILE = Backgammon/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.EvanDavis.Backgammon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Backgammon/Backgammon-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -377,10 +388,13 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 3J5W323SD5;
 				INFOPLIST_FILE = Backgammon/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.EvanDavis.Backgammon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Backgammon/Backgammon-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -405,6 +419,7 @@
 				079CC9711DBF24F900E88217 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		079CC9731DBF24F900E88217 /* Build configuration list for PBXNativeTarget "Backgammon" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +428,7 @@
 				079CC9751DBF24F900E88217 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
