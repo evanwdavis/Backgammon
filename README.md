@@ -2,6 +2,9 @@
 
 My attempt to build a swifty backgammon game. First game, and first app written totally in swift! Obviously a work in progress... so let's go with some steps
 
+Going to try applying things from the advanced swift book too 
+
+
 1. Roll Dice functionality
 * should be pretty easy
 2. very basic UI 
